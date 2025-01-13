@@ -8,5 +8,11 @@ app.use(json());
 
 app.use("/wishes", wishRoutes);
 
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).json({ message: 'error en el servidor' })
+})
+
+
 const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Servidor escuchando en el puerto ${PORT}`));
