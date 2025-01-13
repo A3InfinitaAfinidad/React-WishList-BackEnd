@@ -1,4 +1,3 @@
-//*** wishController.js ***/
 // *** wishController.js ***
 
 import { WishModel } from '../model/wish.js';
