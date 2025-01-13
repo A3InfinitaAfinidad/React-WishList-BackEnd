@@ -1,7 +1,7 @@
 //*** wishModel.js ***/
 import { MongoClient, ServerApiVersion } from 'mongodb'
 
-const uri = 'mongodb://localhost:27017/'
+const uri = 'mongodb+srv://dbAlina:<infinitaafinidad10>@proyectofinal.t7ec7.mongodb.net/'
 
 const client = new MongoClient(uri, {
   serverApi: {
